@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH="/opt/homebrew/bin:/usr/bin:/bin"
-REPO="$HOME/Documents/GitHub/AuburnGroveSupport"
+REPO="$HOME/AuburnGroveSupport"
 fswatch -o --exclude '\.git' "$REPO" | while read -r _; do
   sleep 2
   cd "$REPO" || continue
